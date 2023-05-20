@@ -22,14 +22,11 @@ import jakarta.validation.Valid;
 
 @RestController
 public class InfoController {
-    @Autowired
-    private ObjectMapper objectMapper;
+    @Autowired ObjectMapper objectMapper;
 
-    @Autowired
-    private IInfoService infoService;
+    @Autowired IInfoService infoService;
 
-    @Autowired
-    private IUserService userService;
+    @Autowired IUserService userService;
 
     @GetMapping("/infos")
     public List<Info> getInfos() {
