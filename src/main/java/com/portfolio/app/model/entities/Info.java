@@ -4,6 +4,7 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.Lob;
 import jakarta.persistence.OneToOne;
 import jakarta.validation.constraints.NotNull;
 
@@ -19,12 +20,23 @@ public class Info {
 	@NotNull
 	private String descripcion;
 	@NotNull
-	private String urlimg;
+	@Lob
+    private byte[] imagen;
+	@NotNull
+	private String urlbanner;
 	@OneToOne
 	@NotNull(message = "El ID de usuario no debe ser nulo")
     private User userid;
+	
+	
 	public Long getId() {
 		return id;
+	}
+	public String getUrlbanner() {
+		return urlbanner;
+	}
+	public void setUrlbanner(String urlbanner) {
+		this.urlbanner = urlbanner;
 	}
 	public void setId(Long id) {
 		this.id = id;
@@ -47,11 +59,12 @@ public class Info {
 	public void setDescripcion(String descripcion) {
 		this.descripcion = descripcion;
 	}
-	public String getUrlimg() {
-		return urlimg;
+
+	public byte[] getImagen() {
+		return imagen;
 	}
-	public void setUrlimg(String urlimg) {
-		this.urlimg = urlimg;
+	public void setImagen(byte[] imagen) {
+		this.imagen = imagen;
 	}
 	public User getUserid() {
 		return userid;

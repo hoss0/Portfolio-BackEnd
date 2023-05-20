@@ -17,10 +17,10 @@
 		<java.version>17</java.version>
 	</properties>
 	<dependencies>
-<!-- Dependencias para la conexión a la base de datos MariaDB -->
     <dependency>
-        <groupId>org.mariadb.jdbc</groupId>
-        <artifactId>mariadb-java-client</artifactId>
+        <groupId>mysql</groupId>
+        <artifactId>mysql-connector-java</artifactId>
+        <version>8.0.27</version> <!-- Asegúrate de usar la versión correcta -->
     </dependency>
     
     <!-- Dependencias para JPA y Spring Data JPA -->
@@ -74,6 +74,11 @@
 		    <groupId>org.hibernate.validator</groupId>
 		    <artifactId>hibernate-validator</artifactId>
 		</dependency>
+	   <dependency>
+	        <groupId>jakarta.persistence</groupId>
+	        <artifactId>jakarta.persistence-api</artifactId>
+	        <version>3.0.0</version>
+	    </dependency>
 
 	</dependencies>
 

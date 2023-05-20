@@ -32,12 +32,13 @@ public class ImpInfoService implements IInfoService {
 	}
 
 	@Override
-	public void edit(Long id, String nombrecompleto, String titulo, String descripcion, String urlimg) {
+	public void edit(Long id, String nombrecompleto, String titulo, String descripcion, byte[] imagen, String urlbanner) {
 		Info info = iInfoRepository.findById(id).orElse(null);
 		info.setNombrecompleto(nombrecompleto);
 		info.setTitulo(titulo);
 		info.setDescripcion(descripcion);
-		info.setUrlimg(urlimg);
+		info.setImagen(imagen);
+		info.setUrlbanner(urlbanner);
 		
 		iInfoRepository.save(info);
 	}

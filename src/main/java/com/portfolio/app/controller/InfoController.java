@@ -79,7 +79,7 @@ public class InfoController {
             @RequestParam(required = false) String nombrecompleto,
             @RequestParam(required = false) String titulo,
             @RequestParam(required = false) String descripcion,
-            @RequestParam(required = false) String urlimg) {
+            @RequestParam(required = false) byte[] imagen) {
 
         Info info = infoService.find(id);
 
@@ -99,8 +99,8 @@ public class InfoController {
             info.setDescripcion(descripcion);
         }
 
-        if (StringUtils.hasText(urlimg)) {
-            info.setUrlimg(urlimg);
+        if (imagen != null) {
+            info.setImagen(imagen);
         }
 
         infoService.save(info);
