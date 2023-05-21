@@ -1,14 +1,10 @@
 package com.portfolio.app.model.entities;
 
 import jakarta.persistence.*;
-import jakarta.validation.constraints.NotNull;
-import lombok.Data;
-import lombok.Getter;
-import lombok.Setter;
+import jakarta.validation.constraints.*;
+
 
 @Entity
-@Data
-@Getter @Setter
 public class Educacion {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
