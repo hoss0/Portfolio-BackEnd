@@ -1,6 +1,4 @@
 com\portfolio\app\repositories\IInfoRepository.class
-com\portfolio\app\Interface\ITokenService.class
-com\portfolio\app\controller\TestController.class
 com\portfolio\app\Interface\IExpService.class
 com\portfolio\app\repositories\IUserRepository.class
 com\portfolio\app\Interface\ISkillsService.class
@@ -10,11 +8,7 @@ com\portfolio\app\Service\ImpExpService.class
 com\portfolio\app\Interface\IProyectosService.class
 com\portfolio\app\model\entities\Exp.class
 com\portfolio\app\Config\AppConfig.class
-com\portfolio\app\Jose\KeyGeneratorUtils.class
 com\portfolio\app\repositories\IEducacionRepository.class
-com\portfolio\app\Service\ImpTokenService.class
-com\portfolio\app\Security\SecurityConfig.class
-com\portfolio\app\Jose\Jwks.class
 com\portfolio\app\repositories\IExpRepository.class
 com\portfolio\app\repositories\ISkillsRepository.class
 com\portfolio\app\model\entities\Proyectos.class
@@ -28,7 +22,6 @@ com\portfolio\app\controller\UserController.class
 com\portfolio\app\model\entities\Info.class
 com\portfolio\app\Config\WebConfig.class
 com\portfolio\app\PortfolioApplication.class
-com\portfolio\app\controller\AuthController.class
 com\portfolio\app\controller\ExpController.class
 com\portfolio\app\controller\InfoController.class
 com\portfolio\app\controller\EducacionController.class
