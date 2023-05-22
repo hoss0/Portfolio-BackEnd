@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.hos.app.HossPortfolioApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 114.761 s - in com.hos.app.HossPortfolioApplicationTests
