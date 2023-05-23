@@ -40,7 +40,7 @@ public class JwtUtil {
         } catch (Exception e) {
             // Error al generar el token
             e.printStackTrace();
-            return null;
+            return "error al generar token";
         }
     }
 
