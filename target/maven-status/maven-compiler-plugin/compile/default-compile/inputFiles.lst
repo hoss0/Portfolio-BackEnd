@@ -11,6 +11,7 @@ C:\Users\dayor\OneDrive\Escritorio\Portfolio\Portfolio-BackEnd\src\main\java\com
 C:\Users\dayor\OneDrive\Escritorio\Portfolio\Portfolio-BackEnd\src\main\java\com\hos\app\Entities\Educacion.java
 C:\Users\dayor\OneDrive\Escritorio\Portfolio\Portfolio-BackEnd\src\main\java\com\hos\app\Entities\User.java
 C:\Users\dayor\OneDrive\Escritorio\Portfolio\Portfolio-BackEnd\src\main\java\com\hos\app\Interface\IEducacionService.java
+C:\Users\dayor\OneDrive\Escritorio\Portfolio\Portfolio-BackEnd\src\main\java\com\hos\app\Tokens\JwtUtil.java
 C:\Users\dayor\OneDrive\Escritorio\Portfolio\Portfolio-BackEnd\src\main\java\com\hos\app\Repositories\IExpRepository.java
 C:\Users\dayor\OneDrive\Escritorio\Portfolio\Portfolio-BackEnd\src\main\java\com\hos\app\Service\ImpUserService.java
 C:\Users\dayor\OneDrive\Escritorio\Portfolio\Portfolio-BackEnd\src\main\java\com\hos\app\Controller\InfoController.java

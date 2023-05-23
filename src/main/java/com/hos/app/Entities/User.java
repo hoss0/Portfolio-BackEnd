@@ -17,7 +17,14 @@ public class User {
     @Size(min = 1, max = 20, message = "La contraseña de usuario debe tener al menos 1 letra y ser menor a 20 letras")
     @NotNull(message = "La contraseña de usuario no debe ser nulo")
     private String pass;
+    private String token;
     
+	public String getToken() {
+		return token;
+	}
+	public void setToken(String token) {
+		this.token = token;
+	}
 	public Long getId() {
 		return id;
 	}

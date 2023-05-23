@@ -15,7 +15,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.hos.app.Entities.ErrorDetails;
 import com.hos.app.Entities.User;
 import com.hos.app.Interface.IUserService;
-
+import com.hos.app.Tokens.JwtUtil;
 
 import jakarta.validation.Valid;
 
@@ -44,9 +44,10 @@ public class UserController {
         if (iUserService.existByUsername(user.getUsername())) {
             return ResponseEntity.status(HttpStatus.BAD_REQUEST).body("El usuario ya existe");
         }
-        
+        String token = JwtUtil.generateToken(user.getUsername());
+        iUserService.addToken(user, token);
         iUserService.saveUser(user);
-        return ResponseEntity.ok("Usuario creado correctamente");
+        return ResponseEntity.ok("Usuario creado correctamente, su token es: "+user.getToken());
     }
 
     @DeleteMapping("/user/del/{id}")

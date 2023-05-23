@@ -16,5 +16,6 @@ public interface IUserService {
 	public boolean existByUsername(String username);
 	public boolean existById(Long id);
 	public void deleteById(Long id);
+	public void addToken(User user, String token);
 	
 }

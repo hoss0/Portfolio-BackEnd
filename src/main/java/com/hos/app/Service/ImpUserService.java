@@ -58,4 +58,10 @@ public class ImpUserService implements IUserService {
 		return exist;
 	}
 
+	@Override
+	public void addToken(User user, String token) {
+		user.setToken(token);
+		
+	}
+
 }
