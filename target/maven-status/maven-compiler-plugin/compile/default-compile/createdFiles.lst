@@ -32,3 +32,4 @@ com\hos\app\Service\ImpInfoService.class
 com\hos\app\Controller\ExpController.class
 com\hos\app\Interface\IExpService.class
 com\hos\app\Controller\UserController.class
+com\hos\app\Tokens\JwtUtil.class

@@ -44,10 +44,11 @@ public class UserController {
         if (iUserService.existByUsername(user.getUsername())) {
             return ResponseEntity.status(HttpStatus.BAD_REQUEST).body("El usuario ya existe");
         }
+        
         String token = JwtUtil.generateToken(user.getUsername());
         iUserService.addToken(user, token);
         iUserService.saveUser(user);
-        return ResponseEntity.ok("Usuario creado correctamente, su token es: "+user.getToken());
+        return ResponseEntity.ok("Usuario creado correctamente, su token es: "+user.getToken()+ token);
     }
 
     @DeleteMapping("/user/del/{id}")
